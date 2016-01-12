@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://github.com/HankLiang/2016/01/12/hello-world/</loc>
+    <lastmod>2016-01-12T04:04:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/HankLiang/about/index.html</loc>
+    <lastmod>2016-01-12T03:05:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/HankLiang/tags/index.html</loc>
+    <lastmod>2016-01-12T03:04:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/HankLiang/categories/index.html</loc>
+    <lastmod>2016-01-12T03:04:16.000Z</lastmod>
+  </url>
+  
+</urlset>
