@@ -101,11 +101,11 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        1
+        2
         <span>文章</span>
       </div>
       <div class="article-info-block">
-        1
+        2
         <span>标签</span>
       </div>
     </div>
@@ -130,6 +130,63 @@
 
       
       <section id="main">
+      <article id="post-linux-console-color" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/04/linux-console-color/">linux-console-color</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2016/02/04/linux-console-color/">
+      <time datetime="2016-02-04T02:46:08.000Z" itemprop="datePublished">2016-02-04</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>This is a list of codes used in C++ to change the text color:</p>
+<p>black - 30<br>red - 31<br>green - 32<br>brown - 33<br>blue - 34<br>magenta - 35<br>cyan - 36<br>lightgray - 37</p>
+<p>Now these are the basic colours.</p>
+<p>Usage of “\033[“:<br>This is to handle the console cursor. I do not have a complete reference so I ask people who know about it to comment with what I do not have.</p>
+<ul>
+<li>‘m’ character at the end of each of the following sentences is used as a stop character, where the system should stop and parse the \033[ sintax.</li>
+</ul>
+<p>\033[0m - is the default color for the console<br>\033[0;#m - is the color of the text, where # is one of the codes mentioned above<br>\033[1m - makes text bold<br>\033[1;#m - makes colored text bold**<br>\033[2;#m - colors text according to # but a bit darker<br>\033[4;#m - colors text in # and underlines<br>\033[7;#m - colors the background according to #<br>\033[9;#m - colors text and strikes it<br>\033[A - moves cursor one line above (carfull: it does not erase the previously written line)<br>\033[B - moves cursor one line under<br>\033[C - moves cursor one spacing to the right<br>\033[D - moves cursor one spacing to the left<br>\033[E - don’t know yet<br>\033[F - don’t know yet</p>
+<p>\033[2K - erases everything written on line before this.</p>
+<p>**(this could be usefull for those who want more colors. The efect given by bold will give a color change effect)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://github.com/HankLiang/2016/02/04/linux-console-color/" data-id="cik7nyn7h0008zq9wci0jcjpr" class="article-share-link">分享到</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
       <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -137,7 +194,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cijb7dqom0000x59wzhllam8i">
+      <a class="article-gallery-img fancybox" href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cik7nyn6i0000zq9wmqlya3cc">
         <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="image">
       </a>
     
@@ -188,7 +245,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/HankLiang/2016/01/12/hello-world/" data-id="cijb7dqom0000x59wzhllam8i" class="article-share-link">分享到</a>
+      <a data-url="http://github.com/HankLiang/2016/01/12/hello-world/" data-id="cik7nyn6i0000zq9wmqlya3cc" class="article-share-link">分享到</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -209,6 +266,23 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/02/04/linux-console-color/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2016/02/04/linux-console-color/" class="title">linux-console-color</a></p>
+              <p class="item-date"><time datetime="2016-02-04T02:46:08.000Z" itemprop="datePublished">2016-02-04</time></p>
+            </div>
+          </li>
         
           <li>
             
@@ -245,7 +319,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -254,7 +328,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a>
     </div>
   </div>
 
@@ -263,7 +337,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Biu~</title>
+  <title>linux-console-color | Biu~</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hank blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Biu~">
-<meta property="og:url" content="http://github.com/HankLiang/archives/index.html">
+  <meta name="description" content="This is a list of codes used in C++ to change the text color:
+black - 30red - 31green - 32brown - 33blue - 34magenta - 35cyan - 36lightgray - 37
+Now these are the basic colours.
+Usage of “\033[“:This">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux-console-color">
+<meta property="og:url" content="http://github.com/HankLiang/2016/02/04/linux-console-color/index.html">
 <meta property="og:site_name" content="Biu~">
-<meta property="og:description" content="Hank blog">
+<meta property="og:description" content="This is a list of codes used in C++ to change the text color:
+black - 30red - 31green - 32brown - 33blue - 34magenta - 35cyan - 36lightgray - 37
+Now these are the basic colours.
+Usage of “\033[“:This">
+<meta property="og:updated_time" content="2016-02-04T02:48:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Biu~">
-<meta name="twitter:description" content="Hank blog">
+<meta name="twitter:title" content="linux-console-color">
+<meta name="twitter:description" content="This is a list of codes used in C++ to change the text color:
+black - 30red - 31green - 32brown - 33blue - 34magenta - 35cyan - 36lightgray - 37
+Now these are the basic colours.
+Usage of “\033[“:This">
   
   
     <link rel="icon" href="css/images/favicon.jpg">
@@ -129,83 +139,75 @@
 </aside>
 
       
-      <section id="main">
-      <div class="archive-year-wrap">
-        <a href="/archives/2016" class="archive-year">2016</a>
-      </div>
-      <section class="archives-wrap">
-        <div class="archives">
+      <section id="main"><article id="post-linux-console-color" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
     
-    <div class="archive-article-thumbnail">
-      <a href="/2016/02/04/linux-console-color/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-    </div>
     
-    <header class="archive-article-header">
-      
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/04/linux-console-color/">linux-console-color</a>
+    <h1 class="article-title" itemprop="name">
+      linux-console-color
     </h1>
   
 
-      
-        
-  <div class="archive-article-date">
+        <div class="article-meta">
+          
+  <div class="article-date">
     <i class="fa fa-calendar"></i>
     <a href="/2016/02/04/linux-console-color/">
-      <time datetime="2016-02-04T02:46:08.000Z" itemprop="datePublished">2月 4</time>
+      <time datetime="2016-02-04T02:46:08.000Z" itemprop="datePublished">2016-02-04</time>
     </a>
   </div>
 
 
-      
-    </header>
-  </div>
-</article>
-  
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
+          
+        </div>
+      </header>
     
-    <div class="archive-article-thumbnail">
-      <a href="/2016/01/12/hello-world/" class="thumbnail">
-  
-    <span style="background-image:url(http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg)" alt="Hello World" class="thumbnail-image"></span>
-  
-</a>
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>This is a list of codes used in C++ to change the text color:</p>
+<p>black - 30<br>red - 31<br>green - 32<br>brown - 33<br>blue - 34<br>magenta - 35<br>cyan - 36<br>lightgray - 37</p>
+<p>Now these are the basic colours.</p>
+<p>Usage of “\033[“:<br>This is to handle the console cursor. I do not have a complete reference so I ask people who know about it to comment with what I do not have.</p>
+<ul>
+<li>‘m’ character at the end of each of the following sentences is used as a stop character, where the system should stop and parse the \033[ sintax.</li>
+</ul>
+<p>\033[0m - is the default color for the console<br>\033[0;#m - is the color of the text, where # is one of the codes mentioned above<br>\033[1m - makes text bold<br>\033[1;#m - makes colored text bold**<br>\033[2;#m - colors text according to # but a bit darker<br>\033[4;#m - colors text in # and underlines<br>\033[7;#m - colors the background according to #<br>\033[9;#m - colors text and strikes it<br>\033[A - moves cursor one line above (carfull: it does not erase the previously written line)<br>\033[B - moves cursor one line under<br>\033[C - moves cursor one spacing to the right<br>\033[D - moves cursor one spacing to the left<br>\033[E - don’t know yet<br>\033[F - don’t know yet</p>
+<p>\033[2K - erases everything written on line before this.</p>
+<p>**(this could be usefull for those who want more colors. The efect given by bold will give a color change effect)</p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://github.com/HankLiang/2016/02/04/linux-console-color/" data-id="cik7nyn7h0008zq9wci0jcjpr" class="article-share-link">分享到</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
     
-    <header class="archive-article-header">
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/01/12/hello-world/">Hello World</a>
-    </h1>
   
-
-      
-        
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2016/01/12/hello-world/">
-      <time datetime="2016-01-12T04:04:46.000Z" itemprop="datePublished">1月 12</time>
+    <a href="/2016/01/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
     </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
   
-    </div></section>
-  </section>
+</nav>
+
+
+  
+</article>
+
+
+</section>
       
         <aside id="sidebar">
   

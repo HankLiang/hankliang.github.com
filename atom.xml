@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://github.com/HankLiang/"/>
-  <updated>2016-01-12T04:04:46.000Z</updated>
+  <updated>2016-02-04T02:48:24.000Z</updated>
   <id>http://github.com/HankLiang/</id>
   
   <author>
@@ -13,6 +13,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[linux-console-color]]></title>
+    <link href="http://github.com/HankLiang/2016/02/04/linux-console-color/"/>
+    <id>http://github.com/HankLiang/2016/02/04/linux-console-color/</id>
+    <published>2016-02-04T02:46:08.000Z</published>
+    <updated>2016-02-04T02:48:24.000Z</updated>
+    <content type="html"><![CDATA[<p>This is a list of codes used in C++ to change the text color:</p>
+<p>black - 30<br>red - 31<br>green - 32<br>brown - 33<br>blue - 34<br>magenta - 35<br>cyan - 36<br>lightgray - 37</p>
+<p>Now these are the basic colours.</p>
+<p>Usage of “\033[“:<br>This is to handle the console cursor. I do not have a complete reference so I ask people who know about it to comment with what I do not have.</p>
+<ul>
+<li>‘m’ character at the end of each of the following sentences is used as a stop character, where the system should stop and parse the \033[ sintax.</li>
+</ul>
+<p>\033[0m - is the default color for the console<br>\033[0;#m - is the color of the text, where # is one of the codes mentioned above<br>\033[1m - makes text bold<br>\033[1;#m - makes colored text bold**<br>\033[2;#m - colors text according to # but a bit darker<br>\033[4;#m - colors text in # and underlines<br>\033[7;#m - colors the background according to #<br>\033[9;#m - colors text and strikes it<br>\033[A - moves cursor one line above (carfull: it does not erase the previously written line)<br>\033[B - moves cursor one line under<br>\033[C - moves cursor one spacing to the right<br>\033[D - moves cursor one spacing to the left<br>\033[E - don’t know yet<br>\033[F - don’t know yet</p>
+<p>\033[2K - erases everything written on line before this.</p>
+<p>**(this could be usefull for those who want more colors. The efect given by bold will give a color change effect)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is a list of codes used in C++ to change the text color:</p>
+<p>black - 30<br>red - 31<br>green - 32<br>brown - 33<br>blue - 34<br>m]]>
+    </summary>
+    
+      <category term="linux" scheme="http://github.com/HankLiang/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
