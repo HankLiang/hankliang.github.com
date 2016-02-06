@@ -139,7 +139,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/04/linux-console-color/">linux-console-color</a>
+      <a class="article-title" href="/2016/02/04/linux-console-color/">Linux console color</a>
     </h1>
   
 
@@ -160,21 +160,42 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <p>This is a list of codes used in C++ to change the text color:</p>
-<p>black - 30<br>red - 31<br>green - 32<br>brown - 33<br>blue - 34<br>magenta - 35<br>cyan - 36<br>lightgray - 37</p>
-<p>Now these are the basic colours.</p>
-<p>Usage of “\033[“:<br>This is to handle the console cursor. I do not have a complete reference so I ask people who know about it to comment with what I do not have.</p>
+        <h3 id="Color_codes"><a href="#Color_codes" class="headerlink" title="Color codes"></a>Color codes</h3><p>This is a list of codes used in Javascript(or others) to change the text color:</p>
 <ul>
-<li>‘m’ character at the end of each of the following sentences is used as a stop character, where the system should stop and parse the \033[ sintax.</li>
+<li>black - 30</li>
+<li>red - 31</li>
+<li>green - 32</li>
+<li>brown - 33</li>
+<li>blue - 34</li>
+<li>magenta - 35</li>
+<li>cyan - 36</li>
+<li>lightgray - 37</li>
 </ul>
-<p>\033[0m - is the default color for the console<br>\033[0;#m - is the color of the text, where # is one of the codes mentioned above<br>\033[1m - makes text bold<br>\033[1;#m - makes colored text bold**<br>\033[2;#m - colors text according to # but a bit darker<br>\033[4;#m - colors text in # and underlines<br>\033[7;#m - colors the background according to #<br>\033[9;#m - colors text and strikes it<br>\033[A - moves cursor one line above (carfull: it does not erase the previously written line)<br>\033[B - moves cursor one line under<br>\033[C - moves cursor one spacing to the right<br>\033[D - moves cursor one spacing to the left<br>\033[E - don’t know yet<br>\033[F - don’t know yet</p>
-<p>\033[2K - erases everything written on line before this.</p>
-<p>**(this could be usefull for those who want more colors. The efect given by bold will give a color change effect)</p>
+<h3 id="Usage_of__26_2339_3B_5C033_5B_26_2339_3B"><a href="#Usage_of__26_2339_3B_5C033_5B_26_2339_3B" class="headerlink" title="Usage of &#39;\033[&#39;"></a>Usage of <code>&#39;\033[&#39;</code></h3><p>This is to handle the console cursor.<br>*’m’ character at the end of each of the following sentences is used as a stop character, where the system should stop and parse the \033[ sintax.</p>
+<ul>
+<li>\033[0m - is the default color for the console</li>
+<li>\033[0;#m - is the color of the text, where # is one of the codes mentioned above</li>
+<li>\033[1m - makes text bold</li>
+<li>\033[1;#m - makes colored text bold**</li>
+<li>\033[2;#m - colors text according to # but a bit darker</li>
+<li>\033[4;#m - colors text in # and underlines</li>
+<li>\033[7;#m - colors the background according to #</li>
+<li>\033[9;#m - colors text and strikes it</li>
+<li>\033[A - moves cursor one line above (carfull: it does not erase the previously written line)</li>
+<li>\033[B - moves cursor one line under</li>
+<li>\033[C - moves cursor one spacing to the right</li>
+<li>\033[D - moves cursor one spacing to the left</li>
+<li>\033[E - don’t know yet</li>
+<li>\033[F - don’t know yet</li>
+<li>\033[2K - erases everything written on line before this.</li>
+</ul>
+<h3 id="Simple_Demo"><a href="#Simple_Demo" class="headerlink" title="Simple Demo"></a>Simple Demo</h3><p>Written in node, make sure you have installed the node</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> util = <span class="built_in">require</span>(<span class="string">'util'</span>);</span><br><span class="line"><span class="keyword">var</span> info = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.info(<span class="string">'\033[33;1m'</span> + util.format.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>) + <span class="string">'\033[0m'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> error = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.error(<span class="string">"\033[1;31;4m"</span> + util.format.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>) + <span class="string">"\033[0m"</span>);</span><br><span class="line">&#125;;</span><br><span class="line">info(<span class="string">'balabala'</span>);</span><br><span class="line">error(<span class="string">'error'</span>);</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/HankLiang/2016/02/04/linux-console-color/" data-id="cik7nyn7h0008zq9wci0jcjpr" class="article-share-link">分享到</a>
+      <a data-url="http://github.com/HankLiang/2016/02/04/linux-console-color/" data-id="cikae9nh40008sm9wu3yr0bok" class="article-share-link">分享到</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
@@ -194,7 +215,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cik7nyn6i0000zq9wmqlya3cc">
+      <a class="article-gallery-img fancybox" href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cikae9nga0000sm9we27t1ti5">
         <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="image">
       </a>
     
@@ -245,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/HankLiang/2016/01/12/hello-world/" data-id="cik7nyn6i0000zq9wmqlya3cc" class="article-share-link">分享到</a>
+      <a data-url="http://github.com/HankLiang/2016/01/12/hello-world/" data-id="cikae9nga0000sm9we27t1ti5" class="article-share-link">分享到</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -279,7 +300,7 @@
             
             <div class="item-inner">
               <p class="item-category"></p>
-              <p class="item-title"><a href="/2016/02/04/linux-console-color/" class="title">linux-console-color</a></p>
+              <p class="item-title"><a href="/2016/02/04/linux-console-color/" class="title">Linux console color</a></p>
               <p class="item-date"><time datetime="2016-02-04T02:46:08.000Z" itemprop="datePublished">2016-02-04</time></p>
             </div>
           </li>
